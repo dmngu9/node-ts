@@ -5,8 +5,8 @@ const PORT = 3001
 const app = express()
 
 app.get('/', (req: Request, res: Response) => {
-  let count = 3
-  res.send('hello')
+  let count = Math.random()
+  res.send(count)
 })
 
 app.listen(PORT, () => {
